@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" >
     <title>
         
-        Hexo自定义置顶功能实现 · K&#39; Studio
+        K&#39; Studio
         
     </title>
     <link rel="icon" href= /images/head.jpg>
@@ -50,22 +50,11 @@
     
 </head>
     
-        <body class="post-body">
-    
     
 <header class="header">
 
     <div class="header-sidebar-menu">&#xe775;</div>
     <!-- post页的toggle banner  -->
-    
-    <div class="banner">
-            <div class="blog-title">
-                <a href="/" >K&#39; Studio</a>
-            </div>
-            <div class="post-title">
-                <a href="#" class="post-name">Hexo自定义置顶功能实现</a>
-            </div>
-    </div>
     
     <a class="home-link" href=/>K' Studio</a>
 </header>
@@ -73,45 +62,21 @@
         <div class="site-intro">
     
     <!-- 主页  -->
-    
-    
-    <!-- 404页  -->
             
-    <div class="site-intro-img" style="background-image: url(https://raw.githubusercontent.com/Keasesss/Keasesss.github.io/master/intro/post.jpg)"></div>
+    <div class="site-intro-img" style="background-image: url(/)"></div>
     <div class="site-intro-placeholder"></div>
     <div class="site-intro-meta">
         <!-- 标题  -->
         <h1 class="intro-title">
             <!-- 主页  -->
             
-            Hexo自定义置顶功能实现
-            <!-- 404 -->
-            
         </h1>
         <!-- 副标题 -->
         <p class="intro-subtitle">
             <!-- 主页副标题  -->
             
-            
-            <!-- 404 -->
-            
         </p>
         <!-- 文章页meta -->
-        
-            <!-- 文章页标签  -->
-            
-                <div class= post-intro-tags >
-    
-        <a class="post-tag" href="javascript:void(0);" data-href = Hexo>Hexo</a>
-    
-        <a class="post-tag" href="javascript:void(0);" data-href = 功能实现>功能实现</a>
-    
-</div>
-            
-            <div class="post-intro-meta">
-                <span class="post-intro-calander iconfont-archer">&#xe676;</span>
-                <span class="post-intro-time">2017/12/08</span>
-            </div>
         
     </div>
 </div>
@@ -179,78 +144,49 @@
             }
         </script>
         <div class="container container-unloaded">
-            <main class="main post-page">
-    <article class="article-entry">
-        <p>因原主题不支持置顶功能，故查询网上资料学了一哈，大致如下<br>以下代码即<br><em>hexo-generator-index\lib\generator.js</em> 中的一段代码</p>
-<p>注释“Top排序”即为需要加入的代码块，其实现其实很简单，就是抽取文章 <em>font-matter</em> 中的 <em>top</em> 属性值进行比较后排序，值大者在前。</p>
-<pre><code>&apos;use strict&apos;;
+            <main class="main index-page">
+    
+    
+    
+        <article class="index-post">
+            <a class="content-show-full" href = "/Hexo自定义置顶/" >
+                    <h2 class="abstract-title">
+                        
+                        <span class="stick-top iconfont-archer">&#xe63d;</span>
+                        
+                        <span>Hexo自定义置顶功能实现</span>
+                    </h2>
+                <div class="abstract-content">
+                    因原主题不支持置顶功能，故查询网上资料学了一哈，大致如下以下代码即hexo-generator-index\lib\generator.js 中的一段代码
+注释“Top排序”即为需要加入的代码块，其实现其实很简单，就是抽取文章 font-matter 中的 top 属性值进行比较后排序，值大者在前。
+&apos;use strict&apos;;
 
 var pagination = require(&apos;hexo-pagination&apos;);
 
 module.exports = function(locals) {
   var config = this.config;
-  var posts = locals.posts.sort(config.index_generator.order_by);
-  var paginationDir = config.pagination_dir || &apos;page&apos;;
-  var path = config.index_generator.path || &apos;&apos;;
-
-  //Top排序开始
-  posts.data = posts.data.sort(function(a, b) {
-      if(a.top &amp;&amp; b.top) { // 两篇文章top都有定义
-          if(a.top == b.top) return b.date - a.date; // 若top值一样则按照文章日期降序排
-          else return b.top - a.top; // 否则按照top值降序排
-      }
-      else if(a.top &amp;&amp; !b.top) { // 以下是只有一篇文章top有定义，那么将有top的排在前面（这里用异或操作居然不行233）
-          return -1;
-      }
-      else if(!a.top &amp;&amp; b.top) {
-          return 1;
-      }
-      else return b.date - a.date; // 都没定义按照文章日期降序排
-  });
-  //Top排序结束
-
-  return pagination(path, posts, {
-    perPage: config.index_generator.per_page,
-    layout: [&apos;index&apos;, &apos;archive&apos;],
-    format: paginationDir + &apos;/%d/&apos;,
-    data: {
-      __index: true
-    }
-  });
-
-
-};
-</code></pre><p><strong>参考：<a href="http://zhwhong.ml/2017/03/23/deal-with-hexo-article-top-problem/" target="_blank" rel="noopener">直接参考</a><br><a href="www.baidu.com">间接参考</a></strong></p>
-
-    </article>
-    <!-- 前后页  -->
-    <ul class="post-pager">
-        
-        
-            <li class="previous">
-                <a href= "/hello-world/" title= Hello World --序言 >
-                    <span>Previous Post</span>
-                    <span>Hello World --序言</span>
-                </a>
-            </li>
-        
-    </ul>
-    <!-- 评论插件 -->
-    <!-- 来必力City版安装代码 -->
-
-<!-- City版安装代码已完成 -->
+ ...
+                </div>
+            </a>
+            <div class="abstract-post-meta">
+                <!-- tags  -->
+                
+                <div class= abstract-tags >
     
+        <a class="post-tag" href="javascript:void(0);" data-href = Hexo>Hexo</a>
     
-    <!--PC版-->
-
-    <!--PC版-->
-
-    <!-- UY BEGIN -->
-    <div id="uyan_frame"></div>
-    <script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=2151302"></script>
-    <!-- UY END -->
-
-
+        <a class="post-tag" href="javascript:void(0);" data-href = 功能实现>功能实现</a>
+    
+</div>
+                
+                <!-- date  -->
+                <div class="abstract-date">
+                    <span class="abstract-calander iconfont-archer"></span><span class="abstract-time">2017/12/08</span>
+                </div>
+            </div>
+        </article>
+    
+    <!-- paginator  -->
     
 </main>
             <!-- profile -->
@@ -292,13 +228,6 @@ module.exports = function(locals) {
 </footer>
     </div>
     <!-- toc -->
-    
-    <div class="toc-wrapper">
-        <div class="toc-catalog">
-            <span class="iconfont-archer catalog-icon">&#xe613;</span><span>CATALOG</span>
-        </div>
-        
-    </div>
     
     <div class="back-top">&#xe639;</div>
     <div class="sidebar">
