@@ -195,6 +195,36 @@ Warning：本博客主要记录个人日常所得，内容偏口语、重日常�
             </div>
         </article>
     
+    
+    
+        <article class="index-post">
+            <a class="content-show-full" href = "/Hexo自定义置顶/" >
+                    <h2 class="abstract-title">
+                        
+                        <span>[Untitled Post]</span>
+                    </h2>
+                <div class="abstract-content">
+                    因原主题不支持置顶功能，故查询网上资料学了一哈，大致如下以下代码即hexo-generator-index\lib\generator.js 中的一段代码
+注释“Top排序”即为需要加入的代码块，其实现其实很简单，就是抽取文章 font-matter 中的 top 属性值进行比较后排序，值大者在前。
+&apos;use strict&apos;;
+
+var pagination = require(&apos;hexo-pagination&apos;);
+
+module.exports = function(locals) {
+  var config = this.config;
+ ...
+                </div>
+            </a>
+            <div class="abstract-post-meta">
+                <!-- tags  -->
+                
+                <!-- date  -->
+                <div class="abstract-date">
+                    <span class="abstract-calander iconfont-archer"></span><span class="abstract-time">2017/12/08</span>
+                </div>
+            </div>
+        </article>
+    
     <!-- paginator  -->
     
 </main>
@@ -316,7 +346,14 @@ Warning：本博客主要记录个人日常所得，内容偏口语、重日常�
     
     
     
-    <div class="total-archive"> Total : 1 </div>
+    
+    
+    
+    
+    
+    
+    
+    <div class="total-archive"> Total : 2 </div>
     
     <div class="post-archive">
     
@@ -325,6 +362,11 @@ Warning：本博客主要记录个人日常所得，内容偏口语、重日常�
     
     <div class="archive-year"> 2017 </div>
     <ul class="year-list">
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">12/08</span><a class="archive-post-title" href= "/Hexo自定义置顶/" >[Untitled Post]</a>
+        </li>
     
     
         <li class="archive-post-item">
