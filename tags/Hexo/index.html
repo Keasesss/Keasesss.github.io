@@ -149,6 +149,42 @@
     
     
         <article class="index-post">
+            <a class="content-show-full" href = "/Hexo的坑s/" >
+                    <h2 class="abstract-title">
+                        
+                        <span class="stick-top iconfont-archer">&#xe63d;</span>
+                        
+                        <span>Hexo的坑s</span>
+                    </h2>
+                <div class="abstract-content">
+                    关于hexo配置中的坑在搭建hexo时，运行 $ hexo d 指令的时候，在已经安装了hexo-deployer-git之后总是出现ERROR Deployer not found: git 。在网上查了很久试了无数方法，无果，非常难受，无意间在github中看见一网友的回复中提到了要在配置文件中加上plugins:
+ -hexo-server
+ -hexo-deployer-git
+试了一下，成功了T T,悲喜交集…..
+UPDATE发现原来原因是package.jason中没标识相关依赖，在yml中设置会有bug，所以下载node_module的时候要在blog文件中install...
+                </div>
+            </a>
+            <div class="abstract-post-meta">
+                <!-- tags  -->
+                
+                <div class= abstract-tags >
+    
+        <a class="post-tag" href="javascript:void(0);" data-href = Hexo>Hexo</a>
+    
+        <a class="post-tag" href="javascript:void(0);" data-href = BUG and DEBUG>BUG and DEBUG</a>
+    
+</div>
+                
+                <!-- date  -->
+                <div class="abstract-date">
+                    <span class="abstract-calander iconfont-archer"></span><span class="abstract-time">2017/12/08</span>
+                </div>
+            </div>
+        </article>
+    
+    
+    
+        <article class="index-post">
             <a class="content-show-full" href = "/Hexo自定义置顶/" >
                     <h2 class="abstract-title">
                         
@@ -341,13 +377,19 @@ module.exports = function(locals) {
         <div class="sidebar-tags">
     <div class="sidebar-tags-name">
     
+        <span class="sidebar-tag-name"><a href= "#">Java</a></span>
+    
+        <span class="sidebar-tag-name"><a href= "#">tips</a></span>
+    
         <span class="sidebar-tag-name"><a href= "#">Hexo</a></span>
+    
+        <span class="sidebar-tag-name"><a href= "#">BUG and DEBUG</a></span>
     
         <span class="sidebar-tag-name"><a href= "#">功能实现</a></span>
     
-        <span class="sidebar-tag-name"><a href= "#">Github</a></span>
+        <span class="sidebar-tag-name"><a href= "#">coding</a></span>
     
-        <span class="sidebar-tag-name"><a href= "#">资源获取</a></span>
+        <span class="sidebar-tag-name"><a href= "#">Github</a></span>
     
         <span class="sidebar-tag-name"><a href= "#">序言</a></span>
     

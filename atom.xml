@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://koxys.top/"/>
-  <updated>2017-12-08T03:54:30.000Z</updated>
+  <updated>2017-12-08T04:36:46.000Z</updated>
   <id>http://koxys.top/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://koxys.top/Class%E5%AF%B9%E8%B1%A1%E7%9A%84%E8%8E%B7%E5%8F%96%E6%96%B9%E6%B3%95/"/>
     <id>http://koxys.top/Class对象的获取方法/</id>
     <published>2017-12-08T03:52:59.000Z</published>
-    <updated>2017-12-08T03:54:30.000Z</updated>
+    <updated>2017-12-08T04:36:46.000Z</updated>
     
     <content type="html"><![CDATA[<ul><li><p>类名.class获取<br>如 String.class<br>该方法是静态获取，在类的解析阶段获取</p></li><li><p>实例对象.getClass()<br>该方法是动态的，在程序运行时动态获取</p></li><li><p>Static Class.forname(String)<br>该方法动态获取类对象，并使虚拟机动态加载该类</p></li></ul>]]></content>
     
@@ -40,6 +40,10 @@
     </summary>
     
     
+      <category term="Java" scheme="http://koxys.top/tags/Java/"/>
+    
+      <category term="tips" scheme="http://koxys.top/tags/tips/"/>
+    
   </entry>
   
   <entry>
@@ -47,7 +51,7 @@
     <link href="http://koxys.top/%E5%BC%82%E6%AD%A5%E3%80%81%E5%90%8C%E6%AD%A5%E4%B8%8E%E9%98%BB%E5%A1%9E%E3%80%81%E9%9D%9E%E9%98%BB%E5%A1%9E/"/>
     <id>http://koxys.top/异步、同步与阻塞、非阻塞/</id>
     <published>2017-12-08T03:51:26.000Z</published>
-    <updated>2017-12-08T03:52:24.000Z</updated>
+    <updated>2017-12-08T04:37:42.000Z</updated>
     
     <content type="html"><![CDATA[<h3 id="异步、同步、阻塞、非阻塞"><a href="#异步、同步、阻塞、非阻塞" class="headerlink" title="异步、同步、阻塞、非阻塞"></a>异步、同步、阻塞、非阻塞</h3><h4 id="1-异步与同步"><a href="#1-异步与同步" class="headerlink" title="1.异步与同步"></a>1.异步与同步</h4><p>同步简单来说就是对一种通信方式的描述，以HTTP请求为例。<br>指的是在通信的过程中，请求发送给服务器后，服务器由于不能立即返回结果而导致通信的结果无法立即响应，而请求方不能立即得到响应的方式。</p><p>异步则是相对同步来说的另外一种通信方式，即服务器在接受到请求的同时立即做出响应或者不响应，尽管可能并不能返回需要的结果，但是浏览器端会立即放下本次通信，而服务器在随后会在得到正确的结果之后再次发送响应给予浏览器需要的结果。在此期间浏览器也可以再次发送请求查询进度。</p><h4 id="2-阻塞与非阻塞"><a href="#2-阻塞与非阻塞" class="headerlink" title="2.阻塞与非阻塞"></a>2.阻塞与非阻塞</h4><p>所谓阻塞与非阻塞，其实和同步与异步的描述对象是完全不一样的。以HTTP为例，阻塞与非阻塞描述的是在浏览器在等待响应时的真空期线程所采取的行为，阻塞即是线程挂起，不执行其他行为，而是等待响应结果，非阻塞则是线程不只等待，而是会去执行其他任务。</p>]]></content>
     
@@ -61,6 +65,10 @@
     </summary>
     
     
+      <category term="tips" scheme="http://koxys.top/tags/tips/"/>
+    
+      <category term="coding" scheme="http://koxys.top/tags/coding/"/>
+    
   </entry>
   
   <entry>
@@ -68,7 +76,7 @@
     <link href="http://koxys.top/Hexo%E7%9A%84%E5%9D%91s/"/>
     <id>http://koxys.top/Hexo的坑s/</id>
     <published>2017-12-08T03:44:16.000Z</published>
-    <updated>2017-12-08T03:50:46.000Z</updated>
+    <updated>2017-12-08T04:37:42.000Z</updated>
     
     <content type="html"><![CDATA[<h3 id="关于hexo配置中的坑"><a href="#关于hexo配置中的坑" class="headerlink" title="关于hexo配置中的坑"></a>关于hexo配置中的坑</h3><h5 id="在搭建hexo时，运行-hexo-d-指令的时候，在已经安装了hexo-deployer-git之后总是出现ERROR-Deployer-not-found-git-。在网上查了很久试了无数方法，无果，非常难受，无意间在github中看见一网友的回复中提到了要在配置文件中加上"><a href="#在搭建hexo时，运行-hexo-d-指令的时候，在已经安装了hexo-deployer-git之后总是出现ERROR-Deployer-not-found-git-。在网上查了很久试了无数方法，无果，非常难受，无意间在github中看见一网友的回复中提到了要在配置文件中加上" class="headerlink" title="在搭建hexo时，运行 $ hexo d 指令的时候，在已经安装了hexo-deployer-git之后总是出现ERROR Deployer not found: git 。在网上查了很久试了无数方法，无果，非常难受，无意间在github中看见一网友的回复中提到了要在配置文件中加上"></a>在搭建hexo时，运行 $ hexo d 指令的时候，在已经安装了hexo-deployer-git之后总是出现ERROR Deployer not found: git 。在网上查了很久试了无数方法，无果，非常难受，无意间在github中看见一网友的回复中提到了要在配置文件中加上</h5><pre><code>plugins: -hexo-server -hexo-deployer-git</code></pre><p>试了一下，成功了T T,悲喜交集…..</p><h5 id="UPDATE"><a href="#UPDATE" class="headerlink" title="UPDATE"></a>UPDATE</h5><p>发现原来原因是package.jason中没标识相关依赖，在yml中设置会有bug，所以下载node_module的时候要在blog文件中install –save而不是-g</p><ul><li>npm小知识</li><li>npm install -g 全局下载</li><li>npm install 直接在当前文件夹下载</li></ul>]]></content>
     
@@ -82,6 +90,10 @@
     </summary>
     
     
+      <category term="Hexo" scheme="http://koxys.top/tags/Hexo/"/>
+    
+      <category term="BUG and DEBUG" scheme="http://koxys.top/tags/BUG-and-DEBUG/"/>
+    
   </entry>
   
   <entry>
@@ -89,7 +101,7 @@
     <link href="http://koxys.top/%E6%9C%89%E5%85%B3%E5%9C%A8Github%E4%B8%AD%E5%AD%98%E5%8F%96%E5%9B%BE%E7%89%87%E7%9A%84%E8%B5%84%E6%BA%90/"/>
     <id>http://koxys.top/有关在Github中存取图片的资源/</id>
     <published>2017-12-08T03:36:06.000Z</published>
-    <updated>2017-12-08T03:41:46.000Z</updated>
+    <updated>2017-12-08T04:38:24.000Z</updated>
     
     <content type="html"><![CDATA[<p>近日，我搭blog时要用图片，发现很多主题的background-image都不能使用，在尝试过很多方法，如相对路径、绝对路径、直接复制磁盘路径均无效，之后只能用github资源<br><strong>（此问题待解决）</strong></p><p>在github中push了几个图片后直接复制url无效，经研究发现问题如下：</p><p>在github中载入图片应当使用其download的url，而该url与项目中打开的url是不一致的，无法拼接出来，必须点击 <em>download</em> 按钮进入相关界面才能获取其url</p><p>另：该url其实是有规律的，不过我懒，不打算记。</p>]]></content>
     
@@ -104,9 +116,9 @@
     </summary>
     
     
-      <category term="Github" scheme="http://koxys.top/tags/Github/"/>
+      <category term="BUG and DEBUG" scheme="http://koxys.top/tags/BUG-and-DEBUG/"/>
     
-      <category term="资源获取" scheme="http://koxys.top/tags/%E8%B5%84%E6%BA%90%E8%8E%B7%E5%8F%96/"/>
+      <category term="Github" scheme="http://koxys.top/tags/Github/"/>
     
   </entry>
   
