@@ -198,6 +198,128 @@ Warning：本博客主要记录个人日常所得，内容偏口语、重日常�
     
     
         <article class="index-post">
+            <a class="content-show-full" href = "/Class对象的获取方法/" >
+                    <h2 class="abstract-title">
+                        
+                        <span class="stick-top iconfont-archer">&#xe63d;</span>
+                        
+                        <span>Class对象的获取方法</span>
+                    </h2>
+                <div class="abstract-content">
+                    
+类名.class获取如 String.class该方法是静态获取，在类的解析阶段获取
+
+实例对象.getClass()该方法是动态的，在程序运行时动态获取
+
+Static Class.forname(String)该方法动态获取类对象，并使虚拟机动态加载该类
+
+
+
+                </div>
+            </a>
+            <div class="abstract-post-meta">
+                <!-- tags  -->
+                
+                <!-- date  -->
+                <div class="abstract-date">
+                    <span class="abstract-calander iconfont-archer"></span><span class="abstract-time">2017/12/08</span>
+                </div>
+            </div>
+        </article>
+    
+    
+    
+        <article class="index-post">
+            <a class="content-show-full" href = "/异步、同步与阻塞、非阻塞/" >
+                    <h2 class="abstract-title">
+                        
+                        <span class="stick-top iconfont-archer">&#xe63d;</span>
+                        
+                        <span>异步、同步与阻塞、非阻塞</span>
+                    </h2>
+                <div class="abstract-content">
+                    异步、同步、阻塞、非阻塞1.异步与同步同步简单来说就是对一种通信方式的描述，以HTTP请求为例。指的是在通信的过程中，请求发送给服务器后，服务器由于不能立即返回结果而导致通信的结果无法立即响应，而请求方不能立即得到响应的方式。
+异步则是相对同步来说的另外一种通信方式，即服务器在接受到请求的同时立即做出响应或者不响应，尽管可能并不能返回需要的结果，但是浏览器端会立即放下本次通信，而服务器在随后会在得到正确的结果之后再次发送响应给予浏览器需要的结果。在此期间浏览器也可以再次发送请求查询进度。
+2.阻塞与非阻塞所谓阻塞与非阻塞，其实和同步与异步的描述对象是完全不一样的。以HTTP为例，阻塞与非...
+                </div>
+            </a>
+            <div class="abstract-post-meta">
+                <!-- tags  -->
+                
+                <!-- date  -->
+                <div class="abstract-date">
+                    <span class="abstract-calander iconfont-archer"></span><span class="abstract-time">2017/12/08</span>
+                </div>
+            </div>
+        </article>
+    
+    
+    
+        <article class="index-post">
+            <a class="content-show-full" href = "/Hexo的坑s/" >
+                    <h2 class="abstract-title">
+                        
+                        <span class="stick-top iconfont-archer">&#xe63d;</span>
+                        
+                        <span>Hexo的坑s</span>
+                    </h2>
+                <div class="abstract-content">
+                    关于hexo配置中的坑在搭建hexo时，运行 $ hexo d 指令的时候，在已经安装了hexo-deployer-git之后总是出现ERROR Deployer not found: git 。在网上查了很久试了无数方法，无果，非常难受，无意间在github中看见一网友的回复中提到了要在配置文件中加上plugins:
+ -hexo-server
+ -hexo-deployer-git
+试了一下，成功了T T,悲喜交集…..
+UPDATE发现原来原因是package.jason中没标识相关依赖，在yml中设置会有bug，所以下载node_module的时候要在blog文件中install...
+                </div>
+            </a>
+            <div class="abstract-post-meta">
+                <!-- tags  -->
+                
+                <!-- date  -->
+                <div class="abstract-date">
+                    <span class="abstract-calander iconfont-archer"></span><span class="abstract-time">2017/12/08</span>
+                </div>
+            </div>
+        </article>
+    
+    
+    
+        <article class="index-post">
+            <a class="content-show-full" href = "/有关在Github中存取图片的资源/" >
+                    <h2 class="abstract-title">
+                        
+                        <span class="stick-top iconfont-archer">&#xe63d;</span>
+                        
+                        <span>有关在Github中取用图片的资源</span>
+                    </h2>
+                <div class="abstract-content">
+                    近日，我搭blog时要用图片，发现很多主题的background-image都不能使用，在尝试过很多方法，如相对路径、绝对路径、直接复制磁盘路径均无效，之后只能用github资源（此问题待解决）
+在github中push了几个图片后直接复制url无效，经研究发现问题如下：
+在github中载入图片应当使用其download的url，而该url与项目中打开的url是不一致的，无法拼接出来，必须点击 download 按钮进入相关界面才能获取其url
+另：该url其实是有规律的，不过我懒，不打算记。
+
+                </div>
+            </a>
+            <div class="abstract-post-meta">
+                <!-- tags  -->
+                
+                <div class= abstract-tags >
+    
+        <a class="post-tag" href="javascript:void(0);" data-href = Github>Github</a>
+    
+        <a class="post-tag" href="javascript:void(0);" data-href = 资源获取>资源获取</a>
+    
+</div>
+                
+                <!-- date  -->
+                <div class="abstract-date">
+                    <span class="abstract-calander iconfont-archer"></span><span class="abstract-time">2017/12/08</span>
+                </div>
+            </div>
+        </article>
+    
+    
+    
+        <article class="index-post">
             <a class="content-show-full" href = "/Hexo自定义置顶/" >
                     <h2 class="abstract-title">
                         
@@ -225,40 +347,6 @@ module.exports = function(locals) {
         <a class="post-tag" href="javascript:void(0);" data-href = Hexo>Hexo</a>
     
         <a class="post-tag" href="javascript:void(0);" data-href = 功能实现>功能实现</a>
-    
-</div>
-                
-                <!-- date  -->
-                <div class="abstract-date">
-                    <span class="abstract-calander iconfont-archer"></span><span class="abstract-time">2017/12/08</span>
-                </div>
-            </div>
-        </article>
-    
-    
-    
-        <article class="index-post">
-            <a class="content-show-full" href = "/有关在Github中存取图片的资源/" >
-                    <h2 class="abstract-title">
-                        
-                        <span>有关在Github中取用图片的资源</span>
-                    </h2>
-                <div class="abstract-content">
-                    近日，我搭blog时要用图片，发现很多主题的background-image都不能使用，在尝试过很多方法，如相对路径、绝对路径、直接复制磁盘路径均无效，之后只能用github资源（此问题待解决）
-在github中push了几个图片后直接复制url无效，经研究发现问题如下：
-在github中载入图片应当使用其download的url，而该url与项目中打开的url是不一致的，无法拼接出来，必须点击 download 按钮进入相关界面才能获取其url
-另：该url其实是有规律的，不过我懒，不打算记。
-
-                </div>
-            </a>
-            <div class="abstract-post-meta">
-                <!-- tags  -->
-                
-                <div class= abstract-tags >
-    
-        <a class="post-tag" href="javascript:void(0);" data-href = Github>Github</a>
-    
-        <a class="post-tag" href="javascript:void(0);" data-href = 资源获取>资源获取</a>
     
 </div>
                 
@@ -404,7 +492,38 @@ module.exports = function(locals) {
     
     
     
-    <div class="total-archive"> Total : 3 </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <div class="total-archive"> Total : 6 </div>
     
     <div class="post-archive">
     
@@ -417,6 +536,21 @@ module.exports = function(locals) {
     
         <li class="archive-post-item">
             <span class="archive-post-date">12/08</span><a class="archive-post-title" href= "/有关在Github中存取图片的资源/" >有关在Github中取用图片的资源</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">12/08</span><a class="archive-post-title" href= "/异步、同步与阻塞、非阻塞/" >异步、同步与阻塞、非阻塞</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">12/08</span><a class="archive-post-title" href= "/Hexo的坑s/" >Hexo的坑s</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">12/08</span><a class="archive-post-title" href= "/Class对象的获取方法/" >Class对象的获取方法</a>
         </li>
     
     
