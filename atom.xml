@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://koxys.top/"/>
-  <updated>2017-12-31T07:21:34.000Z</updated>
+  <updated>2017-12-31T08:55:30.000Z</updated>
   <id>http://koxys.top/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>spring头信息解析</title>
+    <link href="http://koxys.top/spring%E5%A4%B4%E4%BF%A1%E6%81%AF%E8%A7%A3%E6%9E%90/"/>
+    <id>http://koxys.top/spring头信息解析/</id>
+    <published>2017-12-31T08:35:04.000Z</published>
+    <updated>2017-12-31T08:55:30.000Z</updated>
+    
+    <content type="html"><![CDATA[<h4 id="最近在搞spring-发现其配置文件applicationContext-xml头信息非常麻烦，很好奇是什么意思，在网上找了点资料大概了解如下："><a href="#最近在搞spring-发现其配置文件applicationContext-xml头信息非常麻烦，很好奇是什么意思，在网上找了点资料大概了解如下：" class="headerlink" title="最近在搞spring,发现其配置文件applicationContext.xml头信息非常麻烦，很好奇是什么意思，在网上找了点资料大概了解如下："></a>最近在搞spring,发现其配置文件<code>applicationContext.xml</code>头信息非常麻烦，很好奇是什么意思，在网上找了点资料大概了解如下：</h4><p>以下为常见的内容</p><pre><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;beans xmlns=&quot;http://www.springframework.org/schema/beans&quot;xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;xmlns:context=&quot;http://www.springframework.org/schema/context&quot;xmlns:aop=&quot;http://www.springframework.org/schema/aop&quot;xmlns:tx=&quot;http://www.springframework.org/schema/tx&quot;xsi:schemaLocation=&quot;http://www.springframework.org/schema/beanshttp://www.springframework.org/schema/beans/spring-beans.xsdhttp://www.springframework.org/schema/contexthttp://www.springframework.org/schema/context/spring-context.xsdhttp://www.springframework.org/schema/aophttp://www.springframework.org/schema/aop/spring-aop.xsdhttp://www.springframework.org/schema/txhttp://www.springframework.org/schema/tx/spring-tx.xsd &quot;&gt;</code></pre><p>其中:</p><ul><li><code>&lt;?xml&gt;</code>是xml文件的信息</li><li><code>xmlns</code>全称xmlnamespace，是xml的命名空间信息。如第一行：<br><code>xmlns=&quot;http://www.springframework.org/schema/beans</code>为默认命名空间<br><code>xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</code>为xsi。<br>声明这些东西意义在于在声明之后可以在文件中使用对应的标签。</li><li>在前面的<code>xmlns</code>只是声明了标签，而<code>xsi:schemaLocation</code>则是语法规则契约，=等号后面的内容就是引入的具体的标签库和对应的要在文本中使用的标签库具体版本规则的地址。</li><li>如果需要找到各个location在哪，只需要在各大标签定义的jar包里找到对应的schema文件即可。</li><li>注意：在xsi-schemaLocation中最后一个http:…..与双引号”之间要有一个空格，否则会找不到地址报错。</li></ul><h4 id="ref-参考1"><a href="#ref-参考1" class="headerlink" title="ref:参考1"></a>ref:<a href="http://leeqq.iteye.com/blog/2330226" target="_blank" rel="noopener">参考1</a></h4><h4 id="nbsp-nbsp-nbsp-nbsp-nbsp-nbsp-参考2"><a href="#nbsp-nbsp-nbsp-nbsp-nbsp-nbsp-参考2" class="headerlink" title="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;参考2"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.cnblogs.com/as-dreamer/p/6523215.html" target="_blank" rel="noopener">参考2</a></h4>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h4 id=&quot;最近在搞spring-发现其配置文件applicationContext-xml头信息非常麻烦，很好奇是什么意思，在网上找了点资料大概了解如下：&quot;&gt;&lt;a href=&quot;#最近在搞spring-发现其配置文件applicationContext-xml头信息非常麻烦，
+      
+    
+    </summary>
+    
+    
+      <category term="spring" scheme="http://koxys.top/tags/spring/"/>
+    
+      <category term="xml" scheme="http://koxys.top/tags/xml/"/>
+    
+  </entry>
   
   <entry>
     <title>IDEA使用资料</title>

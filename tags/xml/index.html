@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" >
     <title>
         
-        异步、同步与阻塞、非阻塞 · K&#39; Studio
+        K&#39; Studio
         
     </title>
     <link rel="icon" href= /images/head.jpg>
@@ -50,22 +50,11 @@
     
 </head>
     
-        <body class="post-body">
-    
     
 <header class="header">
 
     <div class="header-sidebar-menu">&#xe775;</div>
     <!-- post页的toggle banner  -->
-    
-    <div class="banner">
-            <div class="blog-title">
-                <a href="/" >K&#39; Studio</a>
-            </div>
-            <div class="post-title">
-                <a href="#" class="post-name">异步、同步与阻塞、非阻塞</a>
-            </div>
-    </div>
     
     <a class="home-link" href=/>K' Studio</a>
 </header>
@@ -73,45 +62,21 @@
         <div class="site-intro">
     
     <!-- 主页  -->
-    
-    
-    <!-- 404页  -->
             
-    <div class="site-intro-img" style="background-image: url(https://raw.githubusercontent.com/Keasesss/Keasesss.github.io/master/intro/post.jpg)"></div>
+    <div class="site-intro-img" style="background-image: url(/)"></div>
     <div class="site-intro-placeholder"></div>
     <div class="site-intro-meta">
         <!-- 标题  -->
         <h1 class="intro-title">
             <!-- 主页  -->
             
-            异步、同步与阻塞、非阻塞
-            <!-- 404 -->
-            
         </h1>
         <!-- 副标题 -->
         <p class="intro-subtitle">
             <!-- 主页副标题  -->
             
-            
-            <!-- 404 -->
-            
         </p>
         <!-- 文章页meta -->
-        
-            <!-- 文章页标签  -->
-            
-                <div class= post-intro-tags >
-    
-        <a class="post-tag" href="javascript:void(0);" data-href = tips>tips</a>
-    
-        <a class="post-tag" href="javascript:void(0);" data-href = coding>coding</a>
-    
-</div>
-            
-            <div class="post-intro-meta">
-                <span class="post-intro-calander iconfont-archer">&#xe676;</span>
-                <span class="post-intro-time">2017/12/08</span>
-            </div>
         
     </div>
 </div>
@@ -179,48 +144,45 @@
             }
         </script>
         <div class="container container-unloaded">
-            <main class="main post-page">
-    <article class="article-entry">
-        <h3 id="异步、同步、阻塞、非阻塞"><a href="#异步、同步、阻塞、非阻塞" class="headerlink" title="异步、同步、阻塞、非阻塞"></a>异步、同步、阻塞、非阻塞</h3><h4 id="1-异步与同步"><a href="#1-异步与同步" class="headerlink" title="1.异步与同步"></a>1.异步与同步</h4><p>同步简单来说就是对一种通信方式的描述，以HTTP请求为例。<br>指的是在通信的过程中，请求发送给服务器后，服务器由于不能立即返回结果而导致通信的结果无法立即响应，而请求方不能立即得到响应的方式。</p>
-<p>异步则是相对同步来说的另外一种通信方式，即服务器在接受到请求的同时立即做出响应或者不响应，尽管可能并不能返回需要的结果，但是浏览器端会立即放下本次通信，而服务器在随后会在得到正确的结果之后再次发送响应给予浏览器需要的结果。在此期间浏览器也可以再次发送请求查询进度。</p>
-<h4 id="2-阻塞与非阻塞"><a href="#2-阻塞与非阻塞" class="headerlink" title="2.阻塞与非阻塞"></a>2.阻塞与非阻塞</h4><p>所谓阻塞与非阻塞，其实和同步与异步的描述对象是完全不一样的。以HTTP为例，阻塞与非阻塞描述的是在浏览器在等待响应时的真空期线程所采取的行为，阻塞即是线程挂起，不执行其他行为，而是等待响应结果，非阻塞则是线程不只等待，而是会去执行其他任务。</p>
-
-    </article>
-    <!-- 前后页  -->
-    <ul class="post-pager">
-        
-            <li class="next">
-                <a href= "/Class对象的获取方法/" title= Class对象的获取方法 >
-                    <span>Next Post</span>
-                    <span>Class对象的获取方法</span>
-                </a>
-            </li>
-        
-        
-            <li class="previous">
-                <a href= "/Hexo的坑s/" title= Hexo的坑s >
-                    <span>Previous Post</span>
-                    <span>Hexo的坑s</span>
-                </a>
-            </li>
-        
-    </ul>
-    <!-- 评论插件 -->
-    <!-- 来必力City版安装代码 -->
-
-<!-- City版安装代码已完成 -->
+            <main class="main index-page">
     
     
-    <!--PC版-->
-
-    <!--PC版-->
-
-    <!-- UY BEGIN -->
-    <div id="uyan_frame"></div>
-    <script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=2151302"></script>
-    <!-- UY END -->
-
-
+    
+        <article class="index-post">
+            <a class="content-show-full" href = "/spring头信息解析/" >
+                    <h2 class="abstract-title">
+                        
+                        <span class="stick-top iconfont-archer">&#xe63d;</span>
+                        
+                        <span>spring头信息解析</span>
+                    </h2>
+                <div class="abstract-content">
+                    最近在搞spring,发现其配置文件applicationContext.xml头信息非常麻烦，很好奇是什么意思，在网上找了点资料大概了解如下：以下为常见的内容
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;beans xmlns=&quot;http://www.springframework.org/schema/beans&quot;
+xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;
+xmlns:context=&...
+                </div>
+            </a>
+            <div class="abstract-post-meta">
+                <!-- tags  -->
+                
+                <div class= abstract-tags >
+    
+        <a class="post-tag" href="javascript:void(0);" data-href = spring>spring</a>
+    
+        <a class="post-tag" href="javascript:void(0);" data-href = xml>xml</a>
+    
+</div>
+                
+                <!-- date  -->
+                <div class="abstract-date">
+                    <span class="abstract-calander iconfont-archer"></span><span class="abstract-time">2017/12/31</span>
+                </div>
+            </div>
+        </article>
+    
+    <!-- paginator  -->
     
 </main>
             <!-- profile -->
@@ -262,13 +224,6 @@
 </footer>
     </div>
     <!-- toc -->
-    
-    <div class="toc-wrapper">
-        <div class="toc-catalog">
-            <span class="iconfont-archer catalog-icon">&#xe613;</span><span>CATALOG</span>
-        </div>
-        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#异步、同步、阻塞、非阻塞"><span class="toc-number">1.</span> <span class="toc-text"><a href="#&#x5F02;&#x6B65;&#x3001;&#x540C;&#x6B65;&#x3001;&#x963B;&#x585E;&#x3001;&#x975E;&#x963B;&#x585E;" class="headerlink" title="&#x5F02;&#x6B65;&#x3001;&#x540C;&#x6B65;&#x3001;&#x963B;&#x585E;&#x3001;&#x975E;&#x963B;&#x585E;"></a>&#x5F02;&#x6B65;&#x3001;&#x540C;&#x6B65;&#x3001;&#x963B;&#x585E;&#x3001;&#x975E;&#x963B;&#x585E;</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-异步与同步"><span class="toc-number">1.1.</span> <span class="toc-text"><a href="#1-&#x5F02;&#x6B65;&#x4E0E;&#x540C;&#x6B65;" class="headerlink" title="1.&#x5F02;&#x6B65;&#x4E0E;&#x540C;&#x6B65;"></a>1.&#x5F02;&#x6B65;&#x4E0E;&#x540C;&#x6B65;</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-阻塞与非阻塞"><span class="toc-number">1.2.</span> <span class="toc-text"><a href="#2-&#x963B;&#x585E;&#x4E0E;&#x975E;&#x963B;&#x585E;" class="headerlink" title="2.&#x963B;&#x585E;&#x4E0E;&#x975E;&#x963B;&#x585E;"></a>2.&#x963B;&#x585E;&#x4E0E;&#x975E;&#x963B;&#x585E;</span></a></li></ol></li></ol>
-    </div>
     
     <div class="back-top">&#xe639;</div>
     <div class="sidebar">
